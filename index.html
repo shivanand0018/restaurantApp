@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="background-color: pink; position: relative; ">
+        <h1 style="text-align: center;">Restaurant App</h1>
+        <form style="text-align: center;" onsubmit="addDish(event)">
+            <div>
+                <label>Dish Name</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>Price</label>
+                <input type="number" required>
+            </div>
+            <div>
+                <label>Table</label>
+                <select>
+                    <option>Table 1</option>
+                    <option>Table 2</option>
+                    <option>Table 3</option>
+                </select>
+            </div>
+            <button type="submit">Add Dish</button>
+        </form>
+    </div>
+    <div style="font-size: 25px;">
+        <li id="Table 1" value="1">Table 1</li>
+        <li id="Table 2" value="2">Table 2</li>
+        <li id="Table 3" value="3">Table 3</li>
+    </div>
+
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+</html>
